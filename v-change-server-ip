@@ -105,6 +105,7 @@ for i in `ls $ULDDU`; do
         fi
         if [ "${HAVE_NGINX}" -eq 1 ]; then
                 swapfile /home/$i/conf/web/nginx.conf
+                swapfile /home/$i/conf/web/snginx.conf                
         fi
 
         for j in `ls /home/$i/conf/dns/*.db`; do
